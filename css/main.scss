@@ -1,0 +1,21 @@
+//vars
+$layout_width: 960px;
+$footer_heigth: 50px;
+
+//functions
+
+//-------Функция перевода в REMы-----------//
+@function rem($px){
+	@return $px / 16px + 0rem;//--пример--rem(20px);
+}
+
+//layout
+
+@import 'normalize.scss';
+@import 'layout.scss';
+
+//sections
+
+@import 'sections/header.scss';
+@import 'sections/footer.scss';
+@import 'sections/main_content.scss';
